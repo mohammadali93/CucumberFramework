@@ -1,4 +1,4 @@
-package com.syntax.utils;
+package com.orangeHRM.utils;
 
 
 	import java.io.FileInputStream;

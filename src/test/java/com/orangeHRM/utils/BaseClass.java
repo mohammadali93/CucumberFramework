@@ -1,4 +1,4 @@
-package com.syntax.utils;
+package com.orangeHRM.utils;
 
 import java.util.concurrent.TimeUnit;
 
@@ -19,6 +19,8 @@ public class BaseClass {
 
 	public static void setUp() {
 
+		//ConfigsReader.readProperties("src/test/resources/configs/credentials.properties");
+									
 		ConfigsReader.readProperties(Constants.CREDENTIALS_FILEPATH);// "src/test/resources/configs/credentials.properties";
 		String browser = ConfigsReader.getProperty("browser");
 

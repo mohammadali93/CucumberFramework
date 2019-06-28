@@ -9,14 +9,16 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features="src/test/resources/Features/AddEmployee.feature"
-		,glue= "com/orangeHRM/steps"
-		,	dryRun=true
+		,glue= "com/orangeHRM/stepDefinations"
+		//,dryRun=true
 		, monochrome=true
-		,tags= {("@smoke")}
+		,tags= {("@temp")}
+		,plugin = {"pretty","html:target/cucumber-default-reports","json:target/cucumber.json"}
 		)
 
 
 
 public class TestRunner {
+	
 
 }

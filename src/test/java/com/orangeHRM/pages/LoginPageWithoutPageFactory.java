@@ -1,9 +1,10 @@
 package com.orangeHRM.pages;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.syntax.utils.BaseClass;
+import com.orangeHRM.utils.BaseClass;
 
 public class LoginPageWithoutPageFactory extends BaseClass
 {

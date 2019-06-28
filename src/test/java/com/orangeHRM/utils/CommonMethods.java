@@ -1,10 +1,7 @@
-package com.syntax.utils;
+package com.orangeHRM.utils;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.List;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -174,19 +171,12 @@ public class CommonMethods extends BaseClass {
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}
 
-	public static String takeScreenshot(String fileName) {
+	public static byte[] takeScreenshot() {
 		TakesScreenshot ts = (TakesScreenshot) driver;
-		File scr = ts.getScreenshotAs(OutputType.FILE);
+		byte[] screen = ts.getScreenshotAs(OutputType.BYTES);
 
-		String dest=System.getProperty("user.dir")+"/target/screenshots/"+ fileName + ".png";
-		
-		try {
-			FileUtils.copyFile(scr, new File(dest));
-		} catch (IOException e) {
-			e.printStackTrace();
-			System.out.println("Unable to take screesnhot");
-		}
-		return dest;
+		return screen;
+
 	}
 
 	public static void scrollDown(int pixels) {

@@ -4,8 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.syntax.utils.BaseClass;
-import com.syntax.utils.CommonMethods;
+import com.orangeHRM.utils.BaseClass;
+import com.orangeHRM.utils.CommonMethods;
 
 public class LoginPage extends BaseClass{
 	
